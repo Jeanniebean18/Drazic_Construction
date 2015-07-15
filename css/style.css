@@ -1,0 +1,32 @@
+#wrapper {
+  width: 100%
+}
+
+.logo {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blades {
+  transform-origin: 200px 100px;
+  transition: transform 2s ease-out;
+}
+
+.blade_trans:hover .blades {
+  transform: rotate(-180deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+}
+
+.grow {
+  animation: rotate 5s ease-out backwards;
+}
