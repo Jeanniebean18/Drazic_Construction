@@ -1,6 +1,54 @@
-#wrapper {
-  width: 100%
+html {
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#home {
+  position:relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+/*header*/
+#header {
+  display: none;
+  padding:1%;
+  background-color: #272626;
+  height:120px;
+  width: 100%;
+  z-index:1000;
+  position: fixed;
+  top:0;
+}
+
+#header__logo {
+  content:url("logo.svg");
+  width:40px;
+}
+/*header*/
+
+#box {
+  display: none;
+  position:fixed;
+  bottom:0;
+  right:0;
+  height:50px;
+  width:200px;
+  background-color:black;
+}
+
+/*main_logo*/
+#wrapper__logo {
+  width: 100%;
+  margin-top:100px;
+}
+
 
 .logo {
   width: 60%;
@@ -8,7 +56,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+/*main_logo*/
 
+/*blades animation*/
 .blades {
   transform-origin: 200px 100px;
   transition: transform 2s ease-out;
@@ -30,3 +80,4 @@
 .grow {
   animation: rotate 5s ease-out backwards;
 }
+/*blades animation*/
