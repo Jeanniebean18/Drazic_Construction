@@ -60,24 +60,49 @@ body {
 
 /*blades animation*/
 .blades {
-  transform-origin: 200px 100px;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   transition: transform 2s ease-out;
 }
 
 .blade_trans:hover .blades {
-  transform: rotate(-180deg);
+-webkit-transform:rotate(-180deg);
+-moz-transform:rotate(-180deg);
+transform:rotate(-180deg);
 }
 
+@-webkit-keyframes rotate {
+0% {
+  -webkit-transform:rotate(360deg);
+}
+60% {
+  -webkit-transform:rotate(-20deg);
+}
+
+}
+@-moz-keyframes rotate {
+0% {
+  -moz-transform:rotate(360deg);
+}
+60% {
+  -moz-transform:rotate(-20deg);
+}
+}
+
+}
 @keyframes rotate {
-  0% {
-    transform: rotate(360deg);
-  }
-  60% {
-    transform: rotate(-20deg);
-  }
+0% {
+  transform:rotate(360deg);
+}
+60% {
+  transform:rotate(-20deg);
+}
 }
 
 .grow {
-  animation: rotate 5s ease-out backwards;
+-webkit-animation: rotate 5s ease-out backwards;
+-moz-animation: rotate 5s ease-out backwards;
+animation: rotate 5s ease-out backwards;
 }
 /*blades animation*/
