@@ -27,11 +27,31 @@ body {
   top:0;
 }
 
-#header__logo {
-  content:url("logo.svg");
-  width:40px;
+/*hero*/
+/*main_logo*/
+
+#hero_container {
+  position: relative;
+  height: 600px;
+  background: url('hero.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
 }
-/*header*/
+#wrapper__logo {
+  position: relative;
+  width: 100%;
+  padding-top:100px;
+}
+
+
+.logo {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 #box {
   display: none;
@@ -43,33 +63,23 @@ body {
   background-color:black;
 }
 
-/*main_logo*/
-#wrapper__logo {
-  width: 100%;
-  margin-top:100px;
-}
 
 
-.logo {
-  width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 /*main_logo*/
 
 /*blades animation*/
 .blades {
   -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
+  -moz-transform-origin: 200px 100px;
   transform-origin: 50% 50%;
   transition: transform 2s ease-out;
 }
 
 .blade_trans:hover .blades {
 -webkit-transform:rotate(-180deg);
--moz-transform:rotate(-180deg);
-transform:rotate(-180deg);
+-moz-transform:none;
+/*transform:rotate(-180deg);*/
 }
 
 @-webkit-keyframes rotate {
@@ -83,10 +93,10 @@ transform:rotate(-180deg);
 }
 @-moz-keyframes rotate {
 0% {
-  -moz-transform:rotate(360deg);
+  -moz-transform:none;
 }
 60% {
-  -moz-transform:rotate(-20deg);
+  -moz-transform:none;
 }
 }
 
