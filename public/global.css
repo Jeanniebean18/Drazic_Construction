@@ -19,7 +19,7 @@ body {
 #header {
   display: none;
   padding:1%;
-  background-color: #272626;
+  background-color: none;
   height:120px;
   width: 100%;
   z-index:1000;
@@ -31,6 +31,11 @@ body {
 /*main_logo*/
 
 #hero_container {
+  position:relative;
+  width:100%;
+} 
+
+#hero_background {
   position: relative;
   height: 600px;
   background: url('hero.jpg');
@@ -52,6 +57,45 @@ body {
   margin-right: auto;
 }
 
+
+#arrow {
+  position: absolute;
+  bottom:-30px;
+  left:44%;
+  content: url('arrow.svg');
+  width:150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*part 2*/
+
+#part2 {
+  position: relative;
+  display:block;
+  margin-top:50px;
+  width:100%;
+}
+#icons_container {
+  position: relative;
+  width:80%;
+  margin-left: 13%;
+  margin-right: auto;
+  
+}
+
+
+#hammer {
+  position: relative;
+  display:block;
+  content: url('hammer.svg');
+  width:20%;
+  max-width:200px;
+  margin:20px;
+  float:left;
+  
+}
+  
 
 #box {
   display: none;
@@ -77,27 +121,27 @@ body {
 }
 
 .blade_trans:hover .blades {
--webkit-transform:rotate(-180deg);
--moz-transform:none;
-/*transform:rotate(-180deg);*/
+  -webkit-transform:rotate(-180deg);
+  -moz-transform:none;
+  /*transform:rotate(-180deg);*/
 }
 
 @-webkit-keyframes rotate {
-0% {
-  -webkit-transform:rotate(360deg);
-}
-60% {
-  -webkit-transform:rotate(-20deg);
-}
+  0% {
+    -webkit-transform:rotate(360deg);
+  }
+  60% {
+    -webkit-transform:rotate(-20deg);
+  }
 
 }
 @-moz-keyframes rotate {
-0% {
-  -moz-transform:none;
-}
-60% {
-  -moz-transform:none;
-}
+  0% {
+    -moz-transform:none;
+  }
+  60% {
+    -moz-transform:none;
+  }
 }
 
 }
