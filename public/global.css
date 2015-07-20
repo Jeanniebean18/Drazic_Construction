@@ -17,14 +17,29 @@ body {
 
 /*header*/
 #header {
-  display: none;
+  display: block;
   padding:1%;
   background-color: none;
-  height:120px;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  height:50px;
   width: 100%;
   z-index:1000;
   position: fixed;
   top:0;
+}
+
+#contact_info {
+  position:absolute;
+  top:15px;
+  right:10px;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+}
+.header_logo {
+  position:absolute;
+  top:-10px;
+  left:10px;
 }
 
 /*hero*/
@@ -37,11 +52,12 @@ body {
 
 #hero_background {
   position: relative;
-  height: 600px;
+  height: 650px;
   background: url('hero.jpg');
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
+  overflow:hidden;
 }
 #wrapper__logo {
   position: relative;
@@ -78,21 +94,32 @@ body {
 }
 #icons_container {
   position: relative;
+  visibility:hidden;
   width:80%;
   margin-left: auto;
   margin-right: auto;
+  color:#272626;
   
 }
 
 #icon_wrapper {
   position: relative;
   display:block;
-  border:1px solid;
   width:25%;
   float:left;
   text-align:center;
-  font-family:;
+  font-family: 'Raleway', sans-serif;
+  font-weight:bold;
 }
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight:bold;
+  font-size: 30px;
+  color:#272626;
+  
+}
+
+
 
 
 #hammer {
