@@ -86,7 +86,8 @@ body {
   margin-right: auto;
   margin-top:40px;
   -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
+  -moz-transform:none;
+  -moz-animation:none;
   /*-webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;*/
 }
@@ -101,11 +102,11 @@ body {
 }
 #icons_container {
   position: relative;
-  visibility:hidden;
   width:80%;
   margin-left: auto;
   margin-right: auto;
   color:#272626;
+  visibility: hidden;
   
 }
 
@@ -116,7 +117,7 @@ body {
   float:left;
   text-align:center;
   font-family: 'Raleway', sans-serif;
-  font-weight:bold;
+  font-weight:normal;
 }
 h1 {
   position:relative;

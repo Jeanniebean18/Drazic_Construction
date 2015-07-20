@@ -2,8 +2,10 @@
 
 .animated {
   -webkit-animation-duration: 1s;
+  -moz-animation-duration: none;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: none;
   animation-fill-mode: both;
 }
 
@@ -20,6 +22,7 @@
 .animated.bounceIn,
 .animated.bounceOut {
   -webkit-animation-duration: .75s;
+  -moz-animation-duration: .75s;
   animation-duration: .75s;
 }
 
@@ -577,6 +580,7 @@
   0% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
+    -moz-transform: none;
     transform: scale3d(.3, .3, .3);
   }
 

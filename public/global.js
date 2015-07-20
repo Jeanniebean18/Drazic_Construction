@@ -11,7 +11,7 @@ function shrink_header() {
   if (window.pageYOffset>150) {
     header.style.backgroundColor = "#272626";
     header.innerHTML = '<img src="logo_header.svg" width="150px" class="header_logo"> <div id="contact_info">michael@drazicconstruction.com 402.590.6365</div>';
-    }
+  }
   if (window.pageYOffset>200) {
     show_icons();
     
@@ -24,22 +24,17 @@ function shrink_header() {
 
 
 function pop_box() {
-  // if (window.pageYOffset>300) {
-    box.style.display = "block";
-    
-  // }
- //  if (window.pageYOffset<400) {
-    // box.style.display = "none";
-    
-  // }
+ 
+  box.style.display = "block";
+
 }
 
 function show_icons() {
-  // if (window.pageYOffset>300) {
-    icons.style.visibility = "visible";
+  icons.style.visibility = "visible"
+  icons.setAttribute("class", " animated bounceIn");
     
     
-  }
+}
 
 
 
