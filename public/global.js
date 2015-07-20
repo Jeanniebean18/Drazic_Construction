@@ -8,7 +8,7 @@ window.onscroll = shrink_header;
 
 
 function shrink_header() {
-  if (window.pageYOffset>200) {
+  if (window.pageYOffset>150) {
     header.style.backgroundColor = "#272626";
     header.innerHTML = '<img src="logo_header.svg" width="150px" class="header_logo"> <div id="contact_info">michael@drazicconstruction.com 402.590.6365</div>';
     }

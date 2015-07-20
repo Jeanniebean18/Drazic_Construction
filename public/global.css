@@ -37,6 +37,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size:15px;
   font-weight:normal;
+  
 }
 .header_logo {
   position:absolute;
@@ -77,13 +78,17 @@ body {
 
 
 #arrow {
-  position: absolute;
-  bottom:-30px;
-  left:44%;
+  position: relative;
+  display:block;
   content: url('arrow.svg');
   width:150px;
   margin-left: auto;
   margin-right: auto;
+  margin-top:40px;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  /*-webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;*/
 }
 
 /*part 2*/
@@ -114,10 +119,21 @@ body {
   font-weight:bold;
 }
 h1 {
+  position:relative;
   font-family: 'Raleway', sans-serif;
-  font-weight:bold;
+  font-weight:normal;
   font-size: 30px;
-  color:#272626;
+  color:white;
+  width:700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:3px;
+  background-color:#272626;
+  text-align:center;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
   
 }
 
