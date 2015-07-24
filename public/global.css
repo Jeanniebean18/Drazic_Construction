@@ -53,31 +53,31 @@ li {
 
 /* unvisited link */
 a:link {
-    color: #ADAAAA;
-    text-decoration: none;
+  color: #ADAAAA;
+  text-decoration: none;
 }
 
 a.kpc {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* visited link */
 
 a:visited {
-    color: #ADAAAA;
-    text-decoration: none;
+  color: #ADAAAA;
+  text-decoration: none;
 }
 /* mouse over link */
 a:hover {
-    color: #A74C24;
-    text-decoration: none;
+  color: #A74C24;
+  text-decoration: none;
 }
 
 /* selected link */
 a:active {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #contact_info {
@@ -130,11 +130,12 @@ a:active {
 #arrow {
   position: relative;
   display:block;
+  z-index:1000;
   content: url('arrow.svg');
   width:150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top:40px;
+  margin-top:-80px;
   -webkit-animation-duration: 5s;
   -moz-transform:none;
   -moz-animation:none;
@@ -185,7 +186,6 @@ a:active {
 #hammer {
   position: relative;
   display:block;
-  content: url('hammer.svg');
   width:225px;
   margin-left: auto;
   margin-right: auto;
@@ -229,7 +229,6 @@ a:active {
 #wrench {
   position: relative;
   display:block;
-  content: url('hammer.svg');
   width:225px;
   margin-left: auto;
   margin-right: auto;
@@ -284,7 +283,6 @@ a:active {
 #house {
   position: relative;
   display:block;
-  content: url('hammer.svg');
   width:225px;
   margin-left: auto;
   margin-right: auto;
@@ -327,27 +325,37 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   width:50%;
-/*  border:1px solid;*/
+  visibility:hidden;
+  /*  border:1px solid;*/
 }
+
+.low_opacity {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 
 
 
 h1 {
   position:relative;
   font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size: 25px;
-  color:white;
+  font-weight:bold;
+  font-size: 250%;
+/*  text-shadow: 2px 2px black;*/
+  color:black;
   width:740px;
   margin-left: auto;
   margin-right: auto;
   padding:3px;
-  background-color:#272626;
+/*  background-color:#272626;*/
+  width:100%;
   text-align:center;
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
+  
   
 }
 
@@ -482,13 +490,13 @@ animation: rotate 5s ease-out backwards;
 
 
 footer {
-  padding:1%;
-  background-color:lightgray;
-  color:white;
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-size:15px;
+padding:1%;
+background-color:lightgray;
+color:white;
+text-align:center;
+font-family: 'Raleway', sans-serif;
+font-size:15px;
 }
 .kpc {
-  color:white;
+color:white;
 }

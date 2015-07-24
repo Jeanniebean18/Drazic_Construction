@@ -1,19 +1,5 @@
 
 <!-- start home  wrapper has top margin-->
-<div class ="home">
-   
-
-  <header id="header">
-    <div id="nav"> <ul>
-      <a href="#home"> <li>home</li></a>
-      <a href="#services"><li>services</li></a>
-      <a href="#contact"> <li>contact</li></a>
-      <a href="#services"> <li>our work</li></a>
-    </ul>
-  </div>
-  <img src="logo_header.svg" width="150px" class="header_logo"> 
-  <div id="contact_info">michael@drazicconstruction.com 402.590.6365</div>
-</header>
 <a name="home"></a>
 <body>
   <div id="hero_container">
@@ -21,13 +7,15 @@
       <div id="wrapper__logo">
         <object id ="logo" class="logo" type="image/svg+xml" data="logo.svg">
         </object>
+        <div class="low_opacity">
         <h1 class="animated fadeIn">
           MAKING OMAHA BEAUTIFUL, ONE PROJECT AT A TIME
-          <!-- Making Omaha Beautiful, One Project at a Time. -->
+          <!-- Making Omaha Beautiful, One Project at a Time -->
         </h1>
       </div>
-      <div id="arrow" class="bounceInUp"></div>
-        <a name="services"></a>
+      </div>
+      
+      <a name="services"></a>
     </div>
   </div>
   <!-- part 2 -->  
@@ -35,6 +23,7 @@
     
   <a name="services"></a>
   <div id="part2">
+    <div id="arrow" class="bounceInUp"></div>
       
       
     <!-- icon1 -->
@@ -82,8 +71,9 @@
 <div id="icons_container3" class="animated">
         
   <div id="icon_wrapper3">
-    <div id="paper" class="animated"></div>
-  </div> 
+    <object id ="house" type="image/svg+xml" data="house.svg">
+    </object>
+  </div>
        
   <div id="addition_text">  
     <p>
@@ -107,17 +97,17 @@
 <!-- pop up box -->
 <!-- contact form -->
 <div id="part3">
-  <a name="contact"></a>
+<a name="contact"></a>
 <div id="form">
 <form action="/contacts" method="post">
-<p> Name: <input type="name" class = "form" placeholder="your name" name="name" value="<%= params["name"] %>" required></p>
-<p> email: <input type="email" class = "form" placeholder="your email" name="email" value="<%=params["email"]%>" required></p>
-<p> message: <input type="text_area" class = "form message" placeholder="what would you like to chat about for your home?" name="message" value="<%=params["message"]%>"required> </p>
-<input type="hidden" name="date" value="<%=Time.now%>" </p>
-<p> <input type="submit" value="submit"></p>
+  <p> Name: <input type="name" class = "form" placeholder="your name" name="name" value="<%= params["name"] %>" required></p>
+  <p> email: <input type="email" class = "form" placeholder="your email" name="email" value="<%=params["email"]%>" required></p>
+  <p> message: <input type="text_area" class = "form message" placeholder="what would you like to chat about for your home?" name="message" value="<%=params["message"]%>"required> </p>
+  <input type="hidden" name="date" value="<%=Time.now%>" </p>
+  <p> <input type="submit" value="submit"></p>
 </form>
 </div>
-</div>
+
 
   
     

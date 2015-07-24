@@ -5,7 +5,7 @@ var logo = document.getElementById("wrapper__logo");
 var icons = document.getElementById("icons_container");
 var icons2 = document.getElementById("icons_container2");
 var icons3 = document.getElementById("icons_container3");
-// var menu = document.getElementById("nav");
+var form = document.getElementById("form");
 
 window.onscroll = shrink_header;
 
@@ -27,7 +27,8 @@ function shrink_header() {
     show_icons3();
   }
     
-  if (window.pageYOffset>900) {
+  if (window.pageYOffset>1175) {
+    show_form();
     // pop_box();
   }
 
@@ -53,6 +54,11 @@ function show_icons2() {
 function show_icons3() {
   icons3.style.visibility = "visible"
   icons3.setAttribute("class", " animated bounceIn");
+}
+
+function show_form() {
+  form.style.visibility = "visible"
+  form.setAttribute("class", " animated slideInLeft");
 }
 
 
