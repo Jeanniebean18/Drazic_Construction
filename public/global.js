@@ -28,7 +28,7 @@ function shrink_header() {
   }
     
   if (window.pageYOffset>900) {
-    pop_box();
+    // pop_box();
   }
 
 }

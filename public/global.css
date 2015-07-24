@@ -57,12 +57,17 @@ a:link {
     text-decoration: none;
 }
 
+a.kpc {
+    color: white;
+    text-decoration: none;
+}
+
 /* visited link */
+
 a:visited {
     color: #ADAAAA;
     text-decoration: none;
 }
-
 /* mouse over link */
 a:hover {
     color: #A74C24;
@@ -83,9 +88,6 @@ a:active {
   font-family: 'Raleway', sans-serif;
   font-size:100%;
   font-weight:normal;
-  
-  
-  
 }
 .header_logo {
   position:absolute;
@@ -334,9 +336,9 @@ h1 {
   position:relative;
   font-family: 'Raleway', sans-serif;
   font-weight:normal;
-  font-size: 30px;
+  font-size: 25px;
   color:white;
-  width:700px;
+  width:740px;
   margin-left: auto;
   margin-right: auto;
   padding:3px;
@@ -477,5 +479,16 @@ animation: rotate 5s ease-out backwards;
 40%, 60%, 80%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
 100%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
 }
-Status API Training Shop Blog About Help
-© 2015 GitHub, Inc. Terms Privacy Security Contact
+
+
+footer {
+  padding:1%;
+  background-color:lightgray;
+  color:white;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size:15px;
+}
+.kpc {
+  color:white;
+}
