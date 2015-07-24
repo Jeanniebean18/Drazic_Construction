@@ -1,16 +1,4 @@
-Skip to content
-This repository  
-Pull requests
-Issues
-Gist
- @Jeanniebean18
- Unwatch 1
-  Star 0
- Fork 0Jeanniebean18/Drazic_Construction
-Branch: master  Drazic_Construction/public/global.css
-@Jeanniebean18Jeanniebean18 3 days ago working more with icons and columns
-1 contributor
-RawBlameHistory     351 lines (297 sloc)  6.328 kB
+
 html {
   box-sizing: border-box;
 }
@@ -101,6 +89,7 @@ body {
   -webkit-animation-duration: 5s;
   -moz-transform:none;
   -moz-animation:none;
+  z-index:500;
   /*-webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;*/
 }
@@ -112,9 +101,16 @@ body {
   display:block;
   margin-top:50px;
   width:100%;
+  max-width:1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
+
+
+
+/*part 2 - home*/
 #icons_container {
   position: relative;
   width:80%;
@@ -122,31 +118,9 @@ body {
   margin-right: auto;
   color:#272626;
   visibility: hidden;
+/*  border:1px solid;*/
   border-bottom:1px dashed;
 }
-
-#icons_container2 {
-  position: relative;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  color:#272626;
-  visibility: hidden;
-  border-bottom:1px dashed;
-}
-
-#icons_container3 {
-  position: relative;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  color:#272626;
-  visibility: hidden;
-  border-bottom:1px dashed;
-}
-
-
-
 
 #icon_wrapper1 {
   position: relative;
@@ -154,18 +128,43 @@ body {
   width:40%;
   float:left;
   padding:3%;
-  /*border: 1px solid;*/
+/*  border: 1px solid;*/
 }
 
 #hammer {
   position: relative;
   display:block;
   content: url('hammer.svg');
-  width:100%;
-  max-width:225px;
+  width:225px;
   margin-left: auto;
   margin-right: auto;
 }
+
+#home_improvement_text {
+  position: relative;
+  display:block;
+  width:50%;
+/*  border: 1px solid;*/
+  float:left;
+  text-align:left;
+  margin-top:20px;
+  
+}
+
+/*part 2 - remodel*/
+
+
+#icons_container2 {
+  position: relative;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  color:#272626;
+/*  border:1px solid;*/
+  visibility: hidden;
+  border-bottom:1px dashed;
+}
+
 
 #icon_wrapper2 {
   position: relative;
@@ -173,17 +172,17 @@ body {
   width:40%;
   float:right;
   padding:3%;
-  /*border: 1px solid;*/
+/*  border: 1px solid;*/
 }
 
 #wrench {
   position: relative;
   display:block;
   content: url('hammer.svg');
-  width:100%;
-  max-width:225px;
+  width:225px;
   margin-left: auto;
   margin-right: auto;
+/*  border: 1px solid;*/
 }
 
 #remodel_text {
@@ -192,9 +191,22 @@ body {
   width:50%;
   /*border: 1px solid;*/
   float:right;
-  text-align:right;
+  text-align:left;
   margin-top:20px;
-  
+}
+
+
+/*part 2 - addition*/
+
+#icons_container3 {
+  position: relative;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  color:#272626;
+  visibility: hidden;
+/*  border:1px solid;*/
+  border-bottom:1px dashed;
 }
 
 #icon_wrapper3 {
@@ -206,7 +218,8 @@ body {
   /*border: 1px solid;*/
 }
 
-#home_improvement_text {
+
+#addition_text {
   position: relative;
   display:block;
   width:50%;
@@ -217,29 +230,19 @@ body {
   
 }
 
-
-
-#addition_text {
+#house {
   position: relative;
   display:block;
-  width:60%;
-  /*border: 1px solid;*/
-  float:left;
-  text-align:right;
-  margin-top:20px;
-  
+  content: url('hammer.svg');
+  width:225px;
+  margin-left: auto;
+  margin-right: auto;
+/*  border: 1px solid;*/
 }
 
 
-#remodel_text {
-  position: relative;
-  display:block;
-  width:60%;
-  /*border: 1px solid;*/
-  float:left;
-  text-align:left;
-  margin-top:20px;
-}
+
+
 
 h1 {
   position:relative;
