@@ -1,3 +1,16 @@
+Skip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @Jeanniebean18
+ Unwatch 1
+  Star 0
+ Fork 0Jeanniebean18/Drazic_Construction
+Branch: master  Drazic_Construction/public/global.css
+@Jeanniebean18Jeanniebean18 3 days ago working more with icons and columns
+1 contributor
+RawBlameHistory     351 lines (297 sloc)  6.328 kB
 html {
   box-sizing: border-box;
 }
@@ -349,3 +362,5 @@ animation: rotate 5s ease-out backwards;
 40%, 60%, 80%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
 100%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
 }
+Status API Training Shop Blog About Help
+© 2015 GitHub, Inc. Terms Privacy Security Contact

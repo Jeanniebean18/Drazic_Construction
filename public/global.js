@@ -26,7 +26,7 @@ function shrink_header() {
     show_icons3();
   }
     
-  if (window.pageYOffset>700) {
+  if (window.pageYOffset>900) {
     pop_box();
   }
 
