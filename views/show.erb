@@ -1,0 +1,10 @@
+<%@contacts = Contact.all %>
+
+<div class="list_contacts">
+  <h2> Contact Submissions:</h2>
+<%@contacts.each do |c| %>
+<br><%= c.id %> - <%= c.name %> - <a href="mailto:<%= c.email %>?Subject=Hello%20from%20Drazic%20Construction" target="_top"><%= c.email %> </a>- <%= c.message %> - <%= c.date %></br> <a href ="contact/<%= c.id %>"> delete </a>
+
+<%end %>
+</div>
+

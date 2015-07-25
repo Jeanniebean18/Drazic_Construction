@@ -1,0 +1,14 @@
+<div id="part3"><div id="login"><%if @error %>
+please enter the correct user name and password.
+<% end %>
+
+<p>Please Login:</p>
+<form action="/valid" method="post">
+  <h2> Name: </h2>
+  <input id="name" type="text" placeholder="Email" name="email" class="form">
+  <h2> Password: </h2>
+  <input id="password" type="password" placeholder="Password" name="password" class="form">
+  <input type="submit" class="submit">
+</form>
+</div>
+</div>
