@@ -495,6 +495,7 @@ background-color:#7A341B;
 }
 
 .email_text {
+  font-family: 'Raleway', sans-serif;
   float:left;
   margin-left:5px;
   margin-right:5px;
@@ -506,6 +507,14 @@ background-color:#7A341B;
   margin-left:5px;
   margin-right:5px;
   
+}
+
+.list_contacts {
+  position:relative;
+  
+  margin: 100px 50px 50px 100px;
+  font-size:18px;
+  font-family: 'Raleway', sans-serif;
 }
 /*main_logo*/
 

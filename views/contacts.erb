@@ -1,0 +1,9 @@
+<%@contacts = Contact.all %>
+
+<div class="list_contacts">
+<%@contacts.each do |c| %>
+<br><%= c.id %> - <%= c.name %> - <a href="mailto:<%= c.email %>?Subject=Hello%20from%20Drazic%20Construction" target="_top"><%= c.email %> </a>- <%= c.message %> - <%= c.date %></br>
+
+<%end %>
+</div>
+
