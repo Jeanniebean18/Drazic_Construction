@@ -19,7 +19,7 @@ body {
 /*header*/
 #header {
   display: block;
-  visibility:hidden;
+  visibility:visible;
   padding:1%;
   background-color: #272626;
   /*opacity: 0.9;
@@ -114,13 +114,16 @@ a:active {
 }
 #wrapper__logo {
   position: relative;
-  width: 100%;
+  width: 61%;
   padding-top:100px;
+  margin-left: auto;
+  margin-right: auto;
+  /*  border: 1px solid;*/
 }
 
 
 .logo {
-  width: 60%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -135,13 +138,13 @@ a:active {
   width:150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top:-80px;
-  -webkit-animation-duration: 5s;
+  margin-top:-120px;
+  -webkit-animation-duration: 1s;
   -moz-transform:none;
   -moz-animation:none;
   z-index:500;
-  /*-webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;*/
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
 }
 
 
@@ -156,6 +159,7 @@ a:active {
   max-width:1280px;
   margin-left: auto;
   margin-right: auto;
+  padding-top:3%;
 }
 
 
@@ -169,7 +173,8 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   color:#272626;
-  visibility: hidden;
+  visibility: visible;
+  /*  margin-top:50px;*/
   /*  border:1px solid;*/
   border-bottom:1px dashed;
 }
@@ -212,7 +217,7 @@ a:active {
   margin-right: auto;
   color:#272626;
   /*  border:1px solid;*/
-  visibility: hidden;
+  visibility: visible;
   border-bottom:1px dashed;
 }
 
@@ -254,7 +259,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   color:#272626;
-  visibility: hidden;
+  visibility: visible;
   /*  border:1px solid;*/
   /*border-bottom:1px dashed;*/
 }
@@ -342,13 +347,13 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-weight:bold;
   font-size: 250%;
-/*  text-shadow: 2px 2px black;*/
+  /*  text-shadow: 2px 2px black;*/
   color:black;
   width:740px;
   margin-left: auto;
   margin-right: auto;
   padding:3px;
-/*  background-color:#272626;*/
+  /*  background-color:#272626;*/
   width:100%;
   text-align:center;
   -webkit-animation-duration: 3s;
@@ -401,6 +406,22 @@ h3::first-line {
   transition: transform 2s ease-out;
   
 }
+#wrench:hover {
+  transform:rotate(-45deg);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 131.243px 125.839px;
+  transform-origin: 50% 50%;
+  transition: transform 2s ease-out;
+}
+
+#house:hover {
+  -webkit-animation-duration:1s;-moz-animation-duration:none;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:none;animation-fill-mode:both;
+  -webkit-animation-name:pulse;animation-name:pulse;
+  /* -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 131.243px 125.839px;
+  transform-origin: 50% 50%;
+  transition: transform 2s ease-out;*/
+}
   
 
 #box {
@@ -419,9 +440,22 @@ h3::first-line {
   padding:3px;
 }
 
+.submit {
+  border-radius:10px;
+  border:none;
+  width:100px;
+  height:50px;
+  background-color:#A84C24;
+  color:white;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size:15px;
+}
 
+.submit:hover {
 
-
+background-color:#7A341B;
+}
 /*main_logo*/
 
 /*blades animation*/
@@ -475,16 +509,13 @@ animation: rotate 5s ease-out backwards;
 
 /*hammer animation*/
 .swing{-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing;}
-@-webkit-keyframes tada{0%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
-10%, 20%{-webkit-transform:scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);transform:scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);}
-30%, 50%, 70%, 90%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
-40%, 60%, 80%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+
+@-webkit-keyframes pulse{0%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
+50%{-webkit-transform:scale3d(1.05, 1.05, 1.05);transform:scale3d(1.05, 1.05, 1.05);}
 100%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
 }
-@keyframes tada{0%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
-10%, 20%{-webkit-transform:scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);transform:scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);}
-30%, 50%, 70%, 90%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
-40%, 60%, 80%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+@keyframes pulse{0%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
+50%{-webkit-transform:scale3d(1.05, 1.05, 1.05);transform:scale3d(1.05, 1.05, 1.05);}
 100%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
 }
 

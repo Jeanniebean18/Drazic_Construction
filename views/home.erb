@@ -7,8 +7,9 @@
       <div id="wrapper__logo">
         <object id ="logo" class="logo" type="image/svg+xml" data="logo.svg">
         </object>
+      </div>
         <div class="low_opacity">
-        <h1 class="animated fadeIn">
+        <h1>
           MAKING OMAHA BEAUTIFUL, ONE PROJECT AT A TIME
           <!-- Making Omaha Beautiful, One Project at a Time -->
         </h1>
@@ -23,7 +24,7 @@
     
   <a name="services"></a>
   <div id="part2">
-    <div id="arrow" class="bounceInUp"></div>
+    <div id="arrow" class="bounce"></div>
       
       
     <!-- icon1 -->
@@ -104,7 +105,7 @@
   <p> email: <input type="email" class = "form" placeholder="your email" name="email" value="<%=params["email"]%>" required></p>
   <p> message: <input type="text_area" class = "form message" placeholder="what would you like to chat about for your home?" name="message" value="<%=params["message"]%>"required> </p>
   <input type="hidden" name="date" value="<%=Time.now%>" </p>
-  <p> <input type="submit" value="submit"></p>
+  <p> <input type="submit" value="submit" class="submit"></p>
 </form>
 </div>
 
