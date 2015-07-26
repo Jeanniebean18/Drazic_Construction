@@ -1,4 +1,4 @@
-@charset "UTF-8";.animated{-webkit-animation-duration:1s;-moz-animation-duration:none;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:none;animation-fill-mode:both;}
+@charset "UTF-8";.animated{-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;}
 .animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;}
 .animated.hinge{-webkit-animation-duration:2s;animation-duration:2s;}
 .animated.bounceIn,

@@ -121,24 +121,26 @@ a:active {
 #hero_container {
   position:relative;
   width:100%;
+  /*  border: 1px solid;*/
 } 
 
 #hero_background {
   position: relative;
-  height: 635px;
+  height: 760px;
   background: url('hero2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
   overflow:hidden;
+  /*  border: 1px solid;*/
 }
 #wrapper__logo {
   position: relative;
   width: 61%;
-  top:120px;
+  top:140px;
   margin-left: auto;
   margin-right: auto;
-  /*  border: 1px solid;*/
+  /*    border: 1px solid;*/
 }
 
 
@@ -150,22 +152,24 @@ a:active {
 }
 
 
-/*#arrow {
+#arrow {
   position: relative;
   display:block;
   z-index:1000;
   content: url('arrow.svg');
-  width:150px;
+  width:140px;
   margin-left: auto;
   margin-right: auto;
-  margin-top:25px;
-  -webkit-animation-duration: 1s;
-  -moz-transform:none;
-  -moz-animation:none;
+  top:200px;
   z-index:500;
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-}*/
+  visibility:visible;
+}
+
+
+.delay {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 0;
+}
 
 
 
@@ -174,12 +178,12 @@ a:active {
 #part2 {
   position: relative;
   display:block;
-/*  margin-top:10px;*/
+  margin-top:30px;
   width:100%;
   max-width:1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-top:3%;
+  /*  padding-top:3%;*/
 }
 
 
@@ -324,7 +328,7 @@ a:active {
 
 .form {
   width:100%;
-  height:30px;
+  height:40px;
   font-family: 'Raleway', sans-serif;
   font-weight:normal;
   color:gray;
@@ -333,7 +337,7 @@ a:active {
   outline:0;
   border:none;
   float:right;
-  border-radius: 5px;
+  /*  border-radius: 5px;*/
   padding:10px;
 }
 
@@ -434,6 +438,7 @@ h3::first-line {
   -moz-transform-origin: 131.243px 125.839px;
   transform-origin: 50% 50%;
   transition: transform 2s ease-out;
+  -webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;
   
 }
 #wrench:hover {
@@ -442,16 +447,35 @@ h3::first-line {
   -moz-transform-origin: 131.243px 125.839px;
   transform-origin: 50% 50%;
   transition: transform 2s ease-out;
+  -webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;
 }
 
 #house:hover {
-  -webkit-animation-duration:1s;-moz-animation-duration:none;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:none;animation-fill-mode:both;
+  -webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;
   -webkit-animation-name:pulse;animation-name:pulse;
   /* -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 131.243px 125.839px;
   transform-origin: 50% 50%;
   transition: transform 2s ease-out;*/
 }
+
+#box:hover {
+  -webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;animation-fill-mode:both;
+  -webkit-animation-name:pulse;animation-name:pulse;
+  /* -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 131.243px 125.839px;
+  transform-origin: 50% 50%;
+  transition: transform 2s ease-out;*/
+}
+
+/*#box2:hover {
+-webkit-animation-duration:1s;-moz-animation-duration:none;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:none;animation-fill-mode:both;
+-webkit-animation-name:pulse;animation-name:pulse;
+/* -webkit-transform-origin: 50% 50%;
+-moz-transform-origin: 131.243px 125.839px;
+transform-origin: 50% 50%;
+transition: transform 2s ease-out;*/
+/*}*/*/
 
 #part4 {
   position:relative;
@@ -476,7 +500,7 @@ h3::first-line {
   position:fixed;
   bottom:0;
   right:0;
-/*  height:50px;*/
+  /*  height:50px;*/
   width:300px;
   background-color:#A84C24;
   color:white;
@@ -488,16 +512,35 @@ h3::first-line {
   z-index:1000;
 }
 
-.submit {
-  border-radius:10px;
-  border:none;
-  width:100px;
-  height:50px;
+#box2 {
+  display: block;
+  position:fixed;
+  bottom:0;
+  right:5px;
+  /*  height:50px;*/
+  width:300px;
   background-color:#A84C24;
   color:white;
   text-align:center;
   font-family: 'Raleway', sans-serif;
-  font-size:15px;
+  font-weight:normal;
+  font-size:30px;
+  padding:5px;
+  z-index:1000;
+ 
+}
+
+.submit {
+  /*  border-radius:10px;*/
+  border:none;
+  width:100px;
+  /*  height:50px;*/
+  background-color:#A84C24;
+  color:white;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size:25px;
+  padding:1%;
 }
 
 .submit:hover {
@@ -617,6 +660,7 @@ font-family: 'Raleway', sans-serif;
 font-size:15px;
 }
 .kpc {
+  
 color:white;
 }
 
@@ -654,8 +698,8 @@ color:gray;
 width:100%;
 display:block;
 position:relative;
-height:850px;
-background: url("/mike.png") no-repeat center center; 
+height:400px;
+background: url("/mike.jpg") no-repeat center center; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -667,84 +711,88 @@ filter: alpha(opacity=95);
 
 
 .meet_mike {
-  position:absolute;
-  top:120px;
-  left:100px;
-  width: 400px;
-  height:80px;
-  border: 2px solid white;
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-size:20px;
-  color:white;
-  background:#252424;
+position:absolute;
+top:120px;
+left:100px;
+width: 400px;
+height:80px;
+border: 2px solid white;
+text-align:center;
+font-family: 'Raleway', sans-serif;
+font-size:20px;
+color:white;
+background:#252424;
 }
 
 .meet_mike:first-line {
   
-  font-size:40px;
-  color:white;
+font-size:40px;
+color:white;
 }
 
 .create {
-  width:40%;
-  display:block;
-  position:relative;
-  margin-left:auto;
-  margin-right:auto;
-  padding-top:10%;
+width:40%;
+display:block;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+padding-top:10%;
 }
 
 .work {
-  margin-bottom:5%;
-  display:block;
-  position:relative;
-  width:100%;
-  height:100px;
-  background-color:#A84C24;
-  
+position:absolute;
+display:block;
+bottom:0;
+width:100%;
+background-color:#252424;
+text-align:center;
+font-family: 'Raleway', sans-serif;
+font-size:240%;
+color:lightgray;
+opacity: 0.5;
+filter: alpha(opacity=50);
 }
 
 .work_button {
-  width:300px;
-  height:60px;
-  background:#272626;
-  border-radius:15px;
-  display:block;
-  position:relative;
+width:300px;
+height:60px;
+background:#272626;
+border-radius:15px;
+display:block;
+position:relative;
 /*  margin-top:100px;*/
 /*  border: 1px solid red;*/
-  top:20px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-size:240%;
-  color:white;
-  padding-top:.5%;
-  vertical-align:middle;
+top:20px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+font-family: 'Raleway', sans-serif;
+font-size:240%;
+color:white;
+padding-top:.5%;
+vertical-align:middle;
 }
 
 #gallery {
-  width:100%;
-  margin-top:50px;
-  display:block;
-  position:relative;
+width:100%;
+margin-top:50px;
+display:block;
+position:relative;
 /*  border: 1px solid red;*/
-  margin-left:auto;
-  margin-right:auto;
-  overflow:hidden;
+margin-left:auto;
+margin-right:auto;
+overflow:hidden;
 }
 
 #row {
-  display:block;
-  position:relative;
-  width:25%;
-  float:left;
+display:block;
+position:relative;
+width:25%;
+float:left;
 }
 
 .work_image {
-  width:100%;
-  padding:1.7%;
+width:100%;
+padding:1.7%;
 }
 
