@@ -41,9 +41,9 @@ end
     end
   end
   
-  # get "/create_user" do
-#     erb :create
-#   end
+  get "/create_user" do
+    erb :create
+  end
 
   post "/save_user" do
     @user = User.new({name: params[:name], email: params[:email], password: params[:password]})
