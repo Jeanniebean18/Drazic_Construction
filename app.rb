@@ -7,6 +7,11 @@ require "pry"
 require "sinatra"
 require "sinatra/reloader"
 require 'bcrypt'
+require 'pony'
+require "active_support/inflector"
+require "active_support/core_ext/array/conversions.rb"
+require "active_support/core_ext/date/calculations.rb"
+require 'active_support/core_ext/object/blank'
 
 configure do
   enable :sessions
@@ -33,10 +38,7 @@ end
 
 # Empower my program with SQLite.
 
-require "active_support/inflector"
-require "active_support/core_ext/array/conversions.rb"
-require "active_support/core_ext/date/calculations.rb"
-require 'active_support/core_ext/object/blank'
+
 
 require_relative "models/user.rb"
 require_relative "models/contact.rb"

@@ -11,10 +11,10 @@ window.onscroll = shrink_header;
 
 
 function shrink_header() {
-  if (window.pageYOffset>25) {
-    // header.style.visibility = "visible";
-//     header.setAttribute("class", " animated slideInDown");
-  }
+  // if (window.pageYOffset>25) {
+  //   header.style.visibility = "visible";
+  //   header.setAttribute("class", " animated slideInDown");
+  // }
   // if (window.pageYOffset>200) {
   //   show_icons();
   // }
@@ -27,19 +27,19 @@ function shrink_header() {
   //   show_icons3();
   // }
   //
-  if (window.pageYOffset>1175) {
+  if (window.pageYOffset>1000) {
     show_form();
-    // pop_box();
+    pop_box();
   }
 
 }
 
 //
-// function pop_box() {
-//
-//   box.style.display = "block";
-//
-// }
+function pop_box() {
+
+  box.style.display = "block";
+
+}
 //
 // function show_icons() {
 //   icons.style.visibility = "visible"

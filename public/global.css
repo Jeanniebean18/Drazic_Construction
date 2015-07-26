@@ -24,11 +24,12 @@ body {
   background-color: #272626;
   /*opacity: 0.9;
   filter: alpha(opacity=90);*/
-  height:50px;
+  height:55px;
   width: 100%;
   z-index:1000;
   position: fixed;
   top:0;
+
 }
 ul {
   
@@ -124,8 +125,8 @@ a:active {
 
 #hero_background {
   position: relative;
-  height: 650px;
-  background: url('hero.jpg');
+  height: 635px;
+  background: url('hero2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
@@ -134,7 +135,7 @@ a:active {
 #wrapper__logo {
   position: relative;
   width: 61%;
-  padding-top:100px;
+  top:120px;
   margin-left: auto;
   margin-right: auto;
   /*  border: 1px solid;*/
@@ -149,7 +150,7 @@ a:active {
 }
 
 
-#arrow {
+/*#arrow {
   position: relative;
   display:block;
   z-index:1000;
@@ -157,14 +158,14 @@ a:active {
   width:150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top:-120px;
+  margin-top:25px;
   -webkit-animation-duration: 1s;
   -moz-transform:none;
   -moz-animation:none;
   z-index:500;
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
-}
+}*/
 
 
 
@@ -173,7 +174,7 @@ a:active {
 #part2 {
   position: relative;
   display:block;
-  margin-top:50px;
+/*  margin-top:10px;*/
   width:100%;
   max-width:1280px;
   margin-left: auto;
@@ -355,6 +356,9 @@ a:active {
 }
 
 .low_opacity {
+  position:relative;
+  display:block;
+  top:120px;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -472,15 +476,16 @@ h3::first-line {
   position:fixed;
   bottom:0;
   right:0;
-  height:50px;
-  width:200px;
-  background-color:black;
+/*  height:50px;*/
+  width:300px;
+  background-color:#A84C24;
   color:white;
   text-align:center;
   font-family: 'Raleway', sans-serif;
   font-weight:normal;
-  font-size:35px;
-  padding:3px;
+  font-size:30px;
+  padding:5px;
+  z-index:1000;
 }
 
 .submit {
@@ -649,8 +654,12 @@ color:gray;
 width:100%;
 display:block;
 position:relative;
-height:1000px;
+height:850px;
 background: url("/mike.png") no-repeat center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 opacity: 0.95;
 filter: alpha(opacity=95);
 }
@@ -684,5 +693,58 @@ filter: alpha(opacity=95);
   margin-left:auto;
   margin-right:auto;
   padding-top:10%;
+}
+
+.work {
+  margin-bottom:5%;
+  display:block;
+  position:relative;
+  width:100%;
+  height:100px;
+  background-color:#A84C24;
+  
+}
+
+.work_button {
+  width:300px;
+  height:60px;
+  background:#272626;
+  border-radius:15px;
+  display:block;
+  position:relative;
+/*  margin-top:100px;*/
+/*  border: 1px solid red;*/
+  top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size:240%;
+  color:white;
+  padding-top:.5%;
+  vertical-align:middle;
+}
+
+#gallery {
+  width:100%;
+  margin-top:50px;
+  display:block;
+  position:relative;
+/*  border: 1px solid red;*/
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+}
+
+#row {
+  display:block;
+  position:relative;
+  width:25%;
+  float:left;
+}
+
+.work_image {
+  width:100%;
+  padding:1.7%;
 }
 
