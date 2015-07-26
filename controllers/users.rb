@@ -1,3 +1,7 @@
+not_found do
+  status 404
+  erb :oops
+end
 
 get "/profile" do
   if session[:user_id] # && session[:user_id] == params[:id].to_i
@@ -8,11 +12,7 @@ get "/profile" do
   end
 end
 
-  get "/contact/:id" do
-    @contact = Contact.find(params[:id])
-    @contact.destroy
-    redirect "/contacts"
-  end
+
 
   get "/logout" do
     session[:user_id] = nil
@@ -38,5 +38,24 @@ end
         @error = true
         redirect "/login"
       end
+    end
+  end
+  
+  # get "/create_user" do
+#     erb :create
+#   end
+
+  post "/save_user" do
+    @user = User.new({name: params[:name], email: params[:email], password: params[:password]})
+    # add unique active record.
+    if @user.valid? 
+      the_password = BCrypt::Password.create(params[:password])
+      @user.password = the_password
+      @user.save
+      #redirect make a get request to the following path
+      redirect "/login" # :"owners/add_owner_success"
+    else
+      @error = true
+      erb :create
     end
   end
