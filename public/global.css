@@ -29,7 +29,20 @@ body {
   z-index:1000;
   position: fixed;
   top:0;
+}
 
+#header2 {
+  display: block;
+  visibility:visible;
+  padding:1%;
+  background-color: #E6E6E6;
+  /*opacity: 0.9;
+  filter: alpha(opacity=90);*/
+  height:55px;
+  width: 100%;
+  z-index:1000;
+  position: fixed;
+  top:0;
 }
 ul {
   
@@ -163,6 +176,7 @@ a:active {
   top:200px;
   z-index:500;
   visibility:visible;
+  -webkit-animation-duration:3s;
 }
 
 
@@ -536,6 +550,19 @@ transition: transform 2s ease-out;*/
   width:100px;
   /*  height:50px;*/
   background-color:#A84C24;
+  color:white;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size:25px;
+  padding:1%;
+}
+
+.submit2 {
+  /*  border-radius:10px;*/
+  border:none;
+  width:100px;
+  /*  height:50px;*/
+  background-color:#31BEC3;
   color:white;
   text-align:center;
   font-family: 'Raleway', sans-serif;
