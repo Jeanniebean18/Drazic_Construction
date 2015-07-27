@@ -69,7 +69,7 @@ function show_form() {
 
 function hide_arrow() {
   // arrow.style.visibility = "hidden"
-  arrow.setAttribute("class", " animated fadeOutDownBig");
+  arrow.setAttribute("class", " animated fadeOutDown");
   
 }
 
