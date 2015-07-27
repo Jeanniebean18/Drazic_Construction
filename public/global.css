@@ -146,7 +146,7 @@ a:active {
 
 #hero_background {
   position: relative;
-  height: 760px;
+  height: 720px;
   background: url('hero2.jpg');
   background-position: 50% 50%;
   background-size: cover;

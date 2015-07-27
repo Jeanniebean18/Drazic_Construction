@@ -13,7 +13,7 @@ window.onscroll = shrink_header;
 
 
 function shrink_header() {
-  if (window.pageYOffset>100) {
+  if (window.pageYOffset>200) {
     hide_arrow();
   }
   // if (window.pageYOffset>200) {
