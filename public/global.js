@@ -29,7 +29,7 @@ function shrink_header() {
     pop_box();
   }
 
-  if (window.pageYOffset>1600) {
+  if (window.pageYOffset>1300) {
     show_form();
     // pop_box();
   }
