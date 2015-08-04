@@ -6,12 +6,15 @@ add images for work -->
 <a name="home"></a>
 
   <div id="hero_container">
+    
     <div id="hero_background">
       <div id="wrapper__logo">
         <object id ="logo" class="logo" type="image/svg+xml" data="logo.svg">
         </object>
       </div>
       <div id="arrow" class="delay animated bounceInUp"></div>
+      
+      
      <div class="work">
       
          
@@ -122,7 +125,7 @@ Meet Michael
 <form action="/contacts" method="post">
 <p> name: <input type="name" class = "form" placeholder="your name" name="name" value="<%= params["name"] %>" required></p>
 <p> email: <input type="email" class = "form" placeholder="your email" name="email" value="<%=params["email"]%>" ></p>
-<p> phone: <input type="phone_number" class = "form" placeholder="your phone#" name="phone" value="<%=params["phone"]%>" required></p>
+<p> phone: <input type="text" class = "form" placeholder="555-555-5555" name="phone" value="<%=params["phone"]%>" required></p>
 <p> message: <input type="text_area" class = "form message" placeholder="How can we make your home better?" name="message" value="<%=params["message"]%>"required> </p>
 <input type="hidden" name="date" value="<%=Time.now%>" </p>
 <p> <input type="submit" value="submit" class="submit"></p>
