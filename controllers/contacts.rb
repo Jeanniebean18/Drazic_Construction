@@ -9,6 +9,10 @@ get "/home" do
   erb :"home"
 end
 
+get "/success" do
+  erb :success
+end
+
 post "/contacts" do
   @contact = Contact.create({name:params[:name], phone: params[:phone], email:params[:email], message:params[:message], date:params[:date]})
   if @contact.save
@@ -28,7 +32,7 @@ post "/contacts" do
           :domain => "kickpunchcreative.com"
       }
       })
-    redirect "/home#contact" #should redirect to login after creating contact.
+    redirect "/success" #should redirect to login after creating contact.
   else
     @error = true
     redirect "/home"
