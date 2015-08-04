@@ -220,79 +220,35 @@ a:active {
   /*  padding-top:3%;*/
 }
 
-
-
-
-
 /*part 2 - home*/
-#icons_container {
-  position: relative;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  color:#272626;
-  visibility: visible;
-  /*  margin-top:50px;*/
-  /*  border:1px solid;*/
-  border-bottom:1px dashed;
-}
 
-#icon_wrapper1 {
+
+#icon_wrapper {
   position: relative;
   display:block;
   width:40%;
   float:left;
-  padding:3%;
+  padding-left:5%;
   /*  border: 1px solid;*/
 }
 
-#hammer {
+#parent_container {
   position: relative;
-  display:block;
-  width:200px;
+  margin-top:3%;
+  width:80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#home_improvement_text {
-  position: relative;
-  display:block;
-  width:50%;
-  /*  border: 1px solid;*/
-  float:left;
-  text-align:left;
-  margin-top:20px;
+  border-bottom:1px dashed;
+  padding:2%;
   
 }
 
-/*part 2 - remodel*/
-
-
-#icons_container2 {
-  position: relative;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  color:#272626;
-  /*  border:1px solid;*/
-  visibility: visible;
-  border-bottom:1px dashed;
-}
-
-
-#icon_wrapper2 {
-  position: relative;
-  display:block;
-  width:40%;
-  float:right;
-  padding:3%;
-/* border-bottom:1px dashed;*/
-}
 
 #wrench {
   position: relative;
   display:block;
-  width:200px;
+  width:60%;
   margin-left: auto;
   margin-right: auto;
   /*  border: 1px solid;*/
@@ -303,54 +259,58 @@ a:active {
   display:block;
   width:50%;
   /*border: 1px solid;*/
-  float:right;
+  float:left;
   text-align:left;
   margin-top:20px;
 }
 
 
-/*part 2 - addition*/
 
-#icons_container3 {
-  position: relative;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  color:#272626;
-  visibility: visible;
-  /*  border:1px solid;*/
-  border-bottom:1px dashed;
-}
-
-#icon_wrapper3 {
-  position: relative;
-  display:block;
-  width:40%;
-  float:left;
-  padding:3%;
-  /*border: 1px solid;*/
+h3 {
+  text-align:left;
+  font-family: 'Raleway', sans-serif;
+  font-weight:normal;
+  font-size:20px;
+ 
 }
 
 
-#addition_text {
-  position: relative;
-  display:block;
-  width:50%;
-/*  border-bottom: 1px dashed;*/
-  float:left;
-  text-align:right;
-  margin-top:20px;
+h4 {
+  text-align:left;
+  font-family: 'Raleway', sans-serif;
+  font-weight:normal;
+  font-size:35px;
+  margin-bottom:-3%;
+  margin-top:-.15%;
   
 }
 
-#house {
-  position: relative;
-  display:block;
-  width:200px;
-  margin-left: auto;
-  margin-right: auto;
-  /*  border: 1px solid;*/
+h5 {
+  text-align:left;
+  font-family: 'Raleway', sans-serif;
+  font-weight:normal;
+  font-size:18px;
 }
+
+
+h6 {
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-weight:normal;
+  font-size:35px;
+  line-height:50px;
+}
+
+
+/*part 2 - remodel*/
+
+
+
+
+
+
+/*part 2 - addition*/
+
 
 /*part 3*/
 #part3 {
@@ -432,37 +392,6 @@ h2 {
   text-align:left;
 }
 
-p {
-  text-align:left;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:1px;
-}
-
-
-p::first-line {
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:35px;
-  line-height:50px;
-}
-
-h3 {
-  text-align:right;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:18px;
-}
-
-
-h3::first-line {
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:35px;
-  line-height:50px;
-}
 
 
 
@@ -865,23 +794,7 @@ font-weight:normal;
 display:block;
 }
 
-#hammer {
-  position: relative;
-  display:block;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-#wrench {
-  width:80%;
- 
-}
-
-#house {
-  width:80%;
- 
-}
   
 .header_logo {
 display:none;
@@ -1014,6 +927,57 @@ color:white;
   z-index:1000;
 }
 
+#icon_wrapper {
+  position: relative;
+  display:block;
+  width:100%;
+  float:left;
+  padding-left:5%;
+  /*  border: 1px solid;*/
+}
+
+#parent_container {
+  position: relative;
+  width:70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom:1px dashed;
+  
+}
+
+
+#wrench {
+  position: relative;
+  display:block;
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:230px;
+  min-width:160px;
+  /*  border: 1px solid;*/
+}
+
+#remodel_text {
+  position: relative;
+  display:block;
+  width:100%;
+  /*border: 1px solid;*/
+  float:left;
+  text-align:left;
+  margin-top:20px;
+}
+
+h3 {
+  text-align:center;
+  font-size:17px;
+}
+h4 {
+  text-align:center;
+  font-size:30px;
+  line-height:45px;
+}
+
 
   
   
@@ -1027,6 +991,14 @@ color:white;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  }
+  
+  
+  h3 {
+    font-size:15px;
+  }
+  h4 {
+    font-size:25px;
   }
 }
 
@@ -1127,13 +1099,7 @@ font-size:20px;
 color:white;
 }
   
-#wrench {
-   
 
- 
-/*  border: 1px solid;*/
-}
-  
 .hamburger {
 position:absolute;
 top:15%;
@@ -1142,83 +1108,7 @@ display:block;
 width:40px;
 }
 
-#icon_wrapper2 {
-  position: relative;
-  display:block;
-  width:100%;
-  float:none;
-  margin-top:15px;
-  /*  border: 1px solid;*/
-}
 
-#icon_wrapper1 {
-  position: relative;
-  display:block;
-  width:100%;
-  float:none;
-
-  /*  border: 1px solid;*/
-}
-
-#icon_wrapper3 {
-  margin-top:15px;
-  position: relative;
-  display:block;
-  width:100%;
-  float:none;
-  
-  /*  border: 1px solid;*/
-}
-
-#hammer {
-  
-  width:60%;
- 
-}
-
-#wrench {
-  width:60%;
- 
-}
-
-#house {
-  width:60%;
- 
-}
-
-#home_improvement_text {
-  position: relative;
-  display:block;
-  width:100%;
-  /*  border: 1px solid;*/
-  float:none;
-  text-align:center;
-  margin-top:10px;
-  
-}
-
-#remodel_text {
-  position: relative;
-  display:block;
-  width:100%;
-  /*border: 1px solid;*/
-  float:none;
-  text-align:center;
-  margin-top:10px;
-  
-}
-
-#addition_text {
-  position: relative;
-  display:block;
-  width:100%;
-  /*border: 1px solid;*/
- 
-  text-align:center;
-  margin-top:10px;
-  margin-bottom:25px;
- 
-}
 
 #form {
   padding:2%;
@@ -1232,36 +1122,6 @@ width:40px;
   /*  border:1px solid;*/
 }
 
-p::first-line {
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:35px;
-  line-height:50px;
-}
-
-p {
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:15px;
-}
-
-h3 {
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:15px;
-}
-
-
-h3::first-line {
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:normal;
-  font-size:35px;
-  line-height:50px;
-}
 
 #box {
   display: none;
