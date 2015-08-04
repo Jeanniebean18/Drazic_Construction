@@ -30,21 +30,39 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
+   
 <header id="header" class="">
   <div id="nav"> <ul>
     <a href="/home#home"> <li>home</li></a>
     <a href="/home#services"><li>services</li></a>
     <a href="/home#contact"> <li>contact</li></a>
-    <a href="/work"> <li>our work</li></a>
+    <a href=""> <li>our work</li></a>
   </ul>
 </div>
-<img src="logo_header.svg" width="150px" class="header_logo"> <img src="hamburger.svg" class="hamburger"><div class="phone">402.590.6365</div>
+ 
+<img src="logo_header.svg" width="150px" class="header_logo"> <img src="hamburger.svg" id="hamburger" class="hamburger"> <div class="phone"><img src="phone.svg" width="15px"class="email3" >402.590.6365</div>
+  <div id="menu">
+    <a href="/home#home"> home</a>
+    <br>
+    <a href="/home#services">services</a>
+    <br>
+    <a href="/home#contact"> contact</a>
+    <br>
+    <a href=""> our work</a>
+  </div>
 <div id="contact_info"> <div class="top"><a href="mailto:michael@drazicconstruction.com?Subject=Hello%20Drazic" target="_top"><img src="email.svg" width="20px" class="email"><div class="email_text">michael@drazicconstruction.com</a>  </div><img src="phone.svg" width="20px"class="email" ><div class="email_text">402.590.6365</div></div></div>
 
 </header>
+
+
 <div class ="home">
-<body>
   <div class="primary">
+    
+ 
+  
+<body>
+
+
     <%=yield%>
   </div>
 

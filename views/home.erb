@@ -6,10 +6,11 @@ add images for work -->
 <a name="home"></a>
 
   <div id="hero_container">
+
     
     <div id="hero_background">
       <div id="wrapper__logo">
-        <object id ="logo" class="logo" type="image/svg+xml" data="logo.svg">
+        <object id ="logo" class="logo logopulse" type="image/svg+xml" data="logo.svg">
         </object>
       </div>
       <div id="arrow" class="delay animated bounceInUp"></div>
@@ -37,7 +38,7 @@ add images for work -->
   <!-- here -->
   <div id="parent_container">
  <div id="icon_wrapper">
-       <object id ="wrench" type="image/svg+xml" data="wrench.svg">
+       <object id ="hammer" type="image/svg+xml" data="hammer.svg">
        </object>
      </div> 
        
@@ -65,9 +66,9 @@ add images for work -->
  
       <div id="remodel_text2">  
        
-          <h6>Custom Home Builds</h6>
+          <h6>Home Improvement</h6>
          <h5>
-          Not finding you dream home? Let's build it! A home is usually the single largest investment that a person makes, let's make sure it's exactly what you want. We're Omaha's favorite custom home builders.
+          Bathrooms, kitchens, basements, decks, patios, pergolas, driveways and tons more. Just tell us where to start! We do it all.
        
       </h5>
       
@@ -82,15 +83,15 @@ add images for work -->
     <!-- here -->
     <div id="parent_container">
    <div id="icon_wrapper">
-         <object id ="wrench" type="image/svg+xml" data="wrench.svg">
+         <object id ="house" type="image/svg+xml" data="house.svg">
          </object>
        </div> 
        
        <div id="remodel_text">  
        
-           <h4>Custom Home Builds</h4>
+           <h4>Remodels & Additions</h4>
           <h3>
-           Not finding you dream home? Let's build it! A home is usually the single largest investment that a person makes, let's make sure it's exactly what you want. We're Omaha's favorite custom home builders.
+           Is your house too small or lack vital amenities like a master bathroom, family room or spacious kitchen? Let's give your home a facelift.
        
        </h3>
      </div>
@@ -104,15 +105,15 @@ add images for work -->
      <div id="parent_container">
      
        <div id="icon_wrapper2">
-             <object id ="wrench" type="image/svg+xml" data="wrench.svg">
+             <object id ="contract" type="image/svg+xml" data="contract.svg">
              </object>
            </div>
  
         <div id="remodel_text2">  
        
-            <h6>Custom Home Builds</h6>
+            <h6>General Contracting</h6>
            <h5>
-            Not finding you dream home? Let's build it! A home is usually the single largest investment that a person makes, let's make sure it's exactly what you want. We're Omaha's favorite custom home builders.
+            We have several years of experience in general contracting as well. Give us a call!
        
         </h5>
       
@@ -128,16 +129,16 @@ add images for work -->
       
  
 <!-- <div class="work"><div class="work_button"> see our work</div></div> -->
-<div id="part4">
+<!-- <div id="part4">
 <div class="mike">
 <div class="meet_mike">
 Meet Michael
-<br>Owner | Craftsman</br> 
+<br>Owner | Craftsman</br>
 </div>
 </div>
-  
 
-</div>
+
+</div> -->
     
 <!-- pop up box -->
 <a href ="/work"><div id="box" class="animated bounce">
@@ -154,8 +155,8 @@ Meet Michael
 <form action="/contacts" method="post">
 <p> name: <input type="name" class = "form" placeholder="your name" name="name" value="<%= params["name"] %>" required></p>
 <p> email: <input type="email" class = "form" placeholder="your email" name="email" value="<%=params["email"]%>" ></p>
-<p> phone: <input type="text" class = "form" placeholder="555-555-5555" name="phone" value="<%=params["phone"]%>" required></p>
-<p> message: <input type="text_area" class = "form message" placeholder="How can we make your home better?" name="message" value="<%=params["message"]%>"required> </p>
+<p> phone: <input type="text" class = "form" placeholder="402-555-5555" name="phone" value="<%=params["phone"]%>" required></p>
+<p> message: <input type="text_area" class = "form message" placeholder="what can we build for you?" name="message" value="<%=params["message"]%>"required> </p>
 <input type="hidden" name="date" value="<%=Time.now%>" </p>
 <p> <input type="submit" value="submit" class="submit"></p>
 </form>
