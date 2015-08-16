@@ -3,7 +3,7 @@ success page for contact info.
 add images for work -->
 <!-- redirect page styling -->
 <!-- start home  wrapper has top margin-->
-<a name="home"></a>
+<div id="home2"></div></a>
 
   <div id="hero_container">
 
@@ -26,13 +26,13 @@ add images for work -->
      </div>
     </div>
     
-    <a name="services"></a>
+    
   </div>
 </div>
 <!-- part 2 -->  
     
     
-<a name="services"></a>
+<div id="services"></div></a>
 <div id="part2">
   
   <!-- here -->
@@ -150,8 +150,11 @@ Meet Michael
 <div id="part3">
   
   
-<a name="contact"></a>
+
+
+
 <div id="form">
+ 
 <form action="/contacts" method="post">
 <p> name: <input type="name" class = "form" placeholder="your name" name="name" value="<%= params["name"] %>" required></p>
 <p> email: <input type="email" class = "form" placeholder="your email" name="email" value="<%=params["email"]%>" ></p>
@@ -160,12 +163,10 @@ Meet Michael
 <input type="hidden" name="date" value="<%=Time.now%>" </p>
 <p> <input type="submit" value="submit" class="submit"></p>
 </form>
-<%if @success %>
-<div class="kpc"> your message was sent </div>
-<% end %>
+
 </div>
 
-
+<div id="contact2"></div>
   
     
     
