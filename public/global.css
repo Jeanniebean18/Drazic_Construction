@@ -16,7 +16,9 @@ body {
   margin: 0;
 }
 
-
+h1.white {
+  color:#A84C24;
+}
 
 /*header*/
 #header {
