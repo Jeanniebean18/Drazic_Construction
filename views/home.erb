@@ -102,7 +102,7 @@ add images for work -->
   
   
      <!-- here -->
-     <div id="parent_container">
+     <div id="parent_container" class="no-border">
      
        <div id="icon_wrapper2">
              <object id ="contract" type="image/svg+xml" data="contract.svg">
@@ -141,11 +141,31 @@ Meet Michael
 </div> -->
     
 <!-- pop up box -->
-<a href ="/work"><div id="box" class="animated bounce">
-  hey! see our work.
-</div>
-</a>
+
 <!-- pop up box -->
+
+
+
+
+
+<div id="gallery">
+  <div class="orange"><h1 class="this"> Our Work </h1></div>
+  <div id="row"><img src="image1.png" class="work_image"></div>
+  <div id="row"><img src="image2.png" class="work_image"></div>
+  <div id="row"><img src="image3.png" class="work_image"></div>
+  <div id="row"><img src="image3.png" class="work_image"></div>
+  
+  <div id="row"><img src="image1.png" class="work_image"></div>
+  <div id="row"><img src="image2.png" class="work_image"></div>
+  <div id="row"><img src="image3.png" class="work_image"></div>
+  <div id="row"><img src="image3.png" class="work_image"></div>
+  
+ 
+  
+  <div style="clear:both"></div>
+  
+</div>
+
 <!-- contact form -->
 <div id="part3">
   
@@ -154,7 +174,7 @@ Meet Michael
 
 
 <div id="form">
-  <h1 class="white">contact us for a quote</h1>
+  <h1 class="this orange2">Contact Us For a Quote</h1>
  
 <form action="/contacts" method="post">
 <p> name: <input type="name" class = "form" placeholder="your name" name="name" value="<%= params["name"] %>" required></p>
@@ -167,7 +187,10 @@ Meet Michael
 
 </div>
 
-
+<a href ="#gallery"><div id="box" class="animated bounce">
+  hey! see our work.
+</div>
+</a>
   
     
     

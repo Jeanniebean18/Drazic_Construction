@@ -260,6 +260,16 @@ a:active {
   padding:2%;
   
 }
+#parent_container.no-border {
+  border:none;
+}
+
+.orange {
+  background-color:#A84C24;
+  width:100%;
+  padding:1%;
+}
+
 
 
 #wrench {
@@ -337,6 +347,25 @@ h4 {
   font-size:35px;
   margin-bottom:-3%;
   margin-top:-.15%;
+  
+}
+
+h1.this {
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-weight:normal;
+  font-size:35px;
+  color:white;
+  
+  
+}
+h1.this.orange2 {
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-weight:bold;
+  font-size:35px;
+  color:#A84C24;
+  
   
 }
 
@@ -571,6 +600,7 @@ transition: transform 2s ease-out;*/
   font-size:25px;
   padding:1%;
   margin-top:2%;
+  -webkit-appearance: none;
 }
 
 .submit2 {
@@ -1171,6 +1201,7 @@ margin-right: auto;
   line-height:40px;
 
   }
+
 h3 {
 font-size: 17px;
 text-align:center;
