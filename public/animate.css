@@ -22,6 +22,11 @@
 @keyframes flash{0%, 50%, 100%{opacity:1;}
 25%, 75%{opacity:0;}
 }
+
+.animated.delay4 {
+  animation-delay:4s;
+  -webkit-animation-delay:4s;
+}
 .flash{-webkit-animation-name:flash;animation-name:flash;}
 @-webkit-keyframes pulse{0%{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
 50%{-webkit-transform:scale3d(1.05, 1.05, 1.05);transform:scale3d(1.05, 1.05, 1.05);}

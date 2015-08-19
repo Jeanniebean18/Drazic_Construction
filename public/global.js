@@ -1,9 +1,11 @@
 
 var menu = document.getElementById("menu")
 var hamburger = document.getElementById("hamburger")
-
-function shrink_header()
-{window.pageYOffset>200&&hide_arrow(),window.pageYOffset>475,window.pageYOffset>750&&pop_box(),window.pageYOffset>1300&&show_form()}function pop_box(){box.style.display="block"}function show_form(){form.style.visibility="visible",form.setAttribute("class"," animated pulse")}function hide_arrow(){arrow.setAttribute("class"," animated fadeOutDown")}var header=document.getElementById("header"),box=document.getElementById("box"),logo=document.getElementById("wrapper__logo"),icons=document.getElementById("icons_container"),icons2=document.getElementById("icons_container2"),icons3=document.getElementById("icons_container3"),form=document.getElementById("form"),arrow=document.getElementById("arrow");window.onscroll=shrink_header;
+var hammer = document.getElementById("hammer")
+var wrench = document.getElementById("wrench")
+var house = document.getElementById("house")
+var contract = document.getElementById("contract")
+var form = document.getElementById("form")
 
 
 hamburger.onclick = toggle_display1;
@@ -24,3 +26,55 @@ function toggle_display2() {
   
   menu.style.display = "none"
 }
+
+
+window.onscroll=inView;
+  
+  
+function inView(){
+  // roll out of top star
+  // if (window.pageYOffset>75) {
+  //   star.setAttribute("class","animated rollOut star2");
+  // }
+  //
+  // if (window.pageYOffset<75) {
+  //   star.setAttribute("class","animated rollIn star2");
+  // }
+      
+    
+  // student work and quotes in viewport in viewport
+  if (document.documentElement.clientWidth  >= 600) {
+      
+     
+        
+    if(isInViewport(hammer)){
+      hammer.setAttribute("class","animated pulse");
+    } 
+    if(isInViewport(wrench)){
+      wrench.setAttribute("class","animated pulse");
+    } 
+    if(isInViewport(house)){
+      house.setAttribute("class","animated pulse");
+    } 
+    if(isInViewport(contract)){
+      contract.setAttribute("class","animated pulse");
+    } 
+    if(isInViewport(form)){
+      form.setAttribute("class","animated pulse");
+    } 
+    
+    // if(isInViewport(studentTwo)){
+   //
+   //    studentTwo.style.visibility="visible";
+   //    studentTwo.setAttribute("class","animated zoomIn");
+   //  }
+  }
+
+
+};
+  
+  
+  
+var isInViewport=function(elem){var distance=elem.getBoundingClientRect();return(distance.top>=0&&distance.left>=0&&distance.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&distance.right<=(window.innerWidth||document.documentElement.clientWidth));};
+  
+  
