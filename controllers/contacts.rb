@@ -45,11 +45,11 @@ get "/contact/:id" do
   redirect "/profile"
 end
 
-get "/work" do
-
-erb :work
-
-end
+# get "/work" do
+#
+# erb :work
+#
+# end
 
 
 

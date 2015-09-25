@@ -1,6 +1,6 @@
 not_found do
 
-  erb :oops
+  redirect "/"
 end
 
 get "/profile" do

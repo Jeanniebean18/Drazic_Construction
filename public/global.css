@@ -891,6 +891,7 @@ float:left;
 .work_image {
 width:100%;
 padding:1.7%;
+
 }
 
 .hamburger {
@@ -898,7 +899,45 @@ display:none;
 }
 
 /*ipad*/
-@media (max-width: 1200px) {
+
+
+
+
+@media (max-width: 1700px) {
+#hero_background {
+  position: relative;
+  height: 700px;
+  background: url('hero2.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+  overflow:hidden;
+  /*  border: 1px solid;*/
+}
+
+.logo {
+position:relative;
+width: 800px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#wrapper__logo {
+position: relative;
+width: 100%;
+top:120px;
+margin-left: auto;
+margin-right: auto;
+/*    border: 1px solid;*/
+}
+.mike {
+  height:500px;
+}
+
+
+}
+
+@media (max-width: 1280px) {
   
 #menu {
 display:none;
@@ -992,14 +1031,14 @@ filter: alpha(opacity=50);
 }
   
 #hero_background {
-position: relative;
-height: 600px;
-background: url('hero2.jpg');
-background-position: 50% 50%;
-background-size: cover;
-text-align: center;
-overflow:hidden;
-/*  border: 1px solid;*/
+  position: relative;
+  height: 600px;
+  background: url('hero2.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+  overflow:hidden;
+  /*  border: 1px solid;*/
 }
   
 #arrow {
@@ -1172,9 +1211,6 @@ margin-top:20px;
 }
 
 
-.mike {
-  height:600px;
-}
 
   
   
@@ -1199,6 +1235,13 @@ margin-right: auto;
 
 
 @media (max-width: 800px) {
+  
+  #row {
+  display:block;
+  position:relative;
+  width:50%;
+  float:left;
+  }
   
   #menu {
   display:none;
