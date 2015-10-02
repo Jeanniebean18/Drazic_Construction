@@ -122,12 +122,12 @@ a:active {
 #contact_info {
   position:absolute;
   top:15px;
-  right:50px;
+  right:5px;
   color: #ADAAAA;
   font-family: 'Raleway', sans-serif;
   font-size:100%;
   font-weight:normal;
-  width:500px;
+  width:560px;
   
   /*  border:1px solid;*/
 }
