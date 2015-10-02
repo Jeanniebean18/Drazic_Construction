@@ -355,10 +355,12 @@ a:active {
   padding-bottom:1%;
 }
 #wrap {
+  width:100%;
   padding-top:30px;
-  margin-bottom:30px;
+/*  margin-bottom:30px;
   margin-right:10%;
-  margin-left:10%;
+  margin-left:10%;*/
+  
 }
 
 .overlay {
@@ -927,10 +929,29 @@ margin-right:auto;
 overflow:hidden;
 }
 
+#gallerywrap {
+width:50%;
+height:300px;
+display:block;
+position:relative;
+  border: 1px solid red;
+margin-left:auto;
+margin-right:auto;
+overflow:hidden;
+}
+
+
+
 #row {
 display:block;
 position:relative;
 width:25%;
+float:left;
+}
+#row2 {
+display:block;
+position:relative;
+width:50%;
 float:left;
 }
 

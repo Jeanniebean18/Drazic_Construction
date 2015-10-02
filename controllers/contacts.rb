@@ -46,7 +46,7 @@ get "/contact/:id" do
   redirect "/profile"
 end
 
-get "/work" do
+get "/services" do
 
 erb :work
 
