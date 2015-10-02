@@ -44,6 +44,7 @@ function inView(){
   // if (window.pageYOffset<75) {
   //   star.setAttribute("class","animated rollIn star2");
   // }
+}
       
     
   // student work and quotes in viewport in viewport
