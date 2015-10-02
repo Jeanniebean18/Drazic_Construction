@@ -8,8 +8,14 @@
 
 <url>
   <loc>http://www.drazicconstruction.com/home</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.drazicconstruction.com/services</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.drazicconstruction.com/work</loc>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>
