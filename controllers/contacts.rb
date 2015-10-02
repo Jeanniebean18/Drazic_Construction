@@ -6,7 +6,8 @@ get "/" do
 end
 
 get "/home" do
-  erb :"home"
+  erb :"home", :layout => :"layout-two"
+   
 end
 
 get "/success" do
@@ -45,11 +46,11 @@ get "/contact/:id" do
   redirect "/profile"
 end
 
-# get "/work" do
-#
-# erb :work
-#
-# end
+get "/work" do
+
+erb :work
+
+end
 
 
 
