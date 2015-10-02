@@ -48,6 +48,12 @@ end
 
 get "/services" do
 
+erb :services
+
+end
+
+get "/work" do
+
 erb :work
 
 end

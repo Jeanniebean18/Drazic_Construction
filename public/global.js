@@ -6,10 +6,11 @@ var wrench = document.getElementById("wrench")
 var house = document.getElementById("house")
 var contract = document.getElementById("contract")
 var form = document.getElementById("form")
-
+var arrow = document.getElementById("arrow")
 
 hamburger.onclick = toggle_display1;
 menu.onclick = toggle_display2;
+window.onscroll=inView;
 
 function toggle_display1() {
   
@@ -28,14 +29,17 @@ function toggle_display2() {
 }
 
 
-window.onscroll=inView;
+
   
   
 function inView(){
-  // roll out of top star
-  // if (window.pageYOffset>75) {
-  //   star.setAttribute("class","animated rollOut star2");
-  // }
+  
+  if (window.pageYOffset>200px) {
+    arrow.style.display="block";
+  }
+  if (window.pageYOffset<200px) {
+    arrow.style.display="none";
+  }
   //
   // if (window.pageYOffset<75) {
   //   star.setAttribute("class","animated rollIn star2");
