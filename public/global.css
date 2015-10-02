@@ -85,7 +85,10 @@ a:link {
   text-decoration: none;
 }
 
-
+a.black {
+  color: #272626;
+  text-decoration: none;
+}
 
 .akpc {
   float:right;
@@ -166,7 +169,7 @@ a:active {
 #hero_background {
   position: relative;
   
-  height: 1000px;
+  height: 800px;
   background: url('hero2.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -177,7 +180,7 @@ a:active {
 #wrapper__logo {
   position: relative;
   width: 100%;
-  top:200px;
+  top:120px;
   margin-left: auto;
   margin-right: auto;
 /*  border: 1px solid;*/
@@ -251,20 +254,16 @@ a:active {
 #icon_wrapper {
   position: relative;
   display:block;
-  width:40%;
+  width:22%;
   float:left;
-  padding-left:5%;
+  margin-left:1%;
+  margin-top:2%;
+  margin-bottom:2%;
+  
   /*  border: 1px solid;*/
 }
 
-#icon_wrapper2 {
-  position: relative;
-  display:block;
-  width:40%;
-  float:right;
-  padding-right:5%;
-  /*  border: 1px solid;*/
-}
+
 
 #parent_container {
   position: relative;
@@ -322,6 +321,7 @@ a:active {
   width:60%;
   margin-left: auto;
   margin-right: auto;
+ 
   /*  border: 1px solid;*/
 }
 
@@ -346,6 +346,15 @@ a:active {
 
 }
 
+#services {
+  width:100%;
+/*  border:1px solid;*/
+  margin-left:39px;
+  
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
 
 
 h3 {
@@ -358,12 +367,11 @@ h3 {
 
 
 h4 {
-  text-align:left;
+  text-align:center;
   font-family: 'Raleway', sans-serif;
   font-weight:normal;
-  font-size:35px;
-  margin-bottom:-3%;
-  margin-top:-.15%;
+  font-size:22px;
+  margin-top:10px;
   
 }
 
@@ -504,11 +512,12 @@ h2 {
   text-align:left;
 }
 
-.circle-bg:hover {
+#icon_wrapper:hover {
+  
   transform-origin:center;
   -webkit-transform-origin:center;
   -moz-transform-origin:center;
-  fill:black;
+  fill:orange;
   -webkit-animation-duration:1s;-moz-animation-duration:0;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:none;animation-fill-mode:both;
   -webkit-animation-name:pulse;animation-name:pulse;-moz-animation-name:none;
 }
@@ -786,7 +795,7 @@ background: url("/mike.jpg") no-repeat center center;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-background-position:50% 50%;
+background-position:50% 40%;
 opacity: 0.95;
 filter: alpha(opacity=95);
 }
@@ -825,15 +834,15 @@ padding-top:10%;
 .work {
 position:absolute;
 display:block;
-bottom:0;
+bottom:120px;
 width:100%;
-background-color:#252424;
 text-align:center;
 font-family: 'Raleway', sans-serif;
 font-size:240%;
-color:lightgray;
-opacity: 0.5;
-filter: alpha(opacity=50);
+color:white;
+font-weight:100;
+opacity:.5;
+
 }
 
 .work2 {
@@ -1119,20 +1128,13 @@ z-index:1000;
 #icon_wrapper {
 position: relative;
 display:block;
-width:100%;
-float:none;
-padding-left:5%;
+width:44%;
+float:left;
+
 /*  border: 1px solid;*/
 }
 
-#icon_wrapper2 {
-position: relative;
-display:block;
-width:100%;
-float:none;
-padding-left:5%;
-/*  border: 1px solid;*/
-}
+
 
 
 
@@ -1212,7 +1214,11 @@ margin-top:20px;
 
 
 
-  
+#services {
+  width:100%;
+/*  border:1px solid;*/
+  margin-left:30px;
+}
   
   
   
@@ -1226,9 +1232,19 @@ margin-left: auto;
 margin-right: auto;
 }
 
-  
 
+#icon_wrapper {
+position: relative;
+display:block;
+width:100%;
+float:none;
 
+/*  border: 1px solid;*/
+}
+
+#services {
+  margin-left:0;
+}
 
 }
 
