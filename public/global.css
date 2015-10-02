@@ -145,7 +145,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   
-    border:1px solid;
+  border:1px solid;
 }
 .header_logo {
   position:absolute;
@@ -183,7 +183,7 @@ a:active {
   top:120px;
   margin-left: auto;
   margin-right: auto;
-/*  border: 1px solid;*/
+  /*  border: 1px solid;*/
 
 }
 
@@ -348,7 +348,7 @@ a:active {
 
 #services {
   width:100%;
-/*  border:1px solid;*/
+  /*  border:1px solid;*/
   margin-left:39px;
   
   padding-top:1%;
@@ -719,12 +719,12 @@ transition: transform 2s ease-out;*/
 .logopulse {
   
   -moz-animation-duration:1s;-moz-animation-fill-mode:both;
-   -moz-animation-name:pulse;
+  -moz-animation-name:pulse;
 }
 .blades {
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 200px 100px;
-   -moz-transform:none;
+  -moz-transform:none;
   transform-origin: 50% 50%;
   transition: transform 2s ease-out;
 }
@@ -951,14 +951,14 @@ display:none;
 
 @media (max-width: 1700px) {
 #hero_background {
-  position: relative;
-  height: 700px;
-  background: url('hero2.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  text-align: center;
-  overflow:hidden;
-  /*  border: 1px solid;*/
+position: relative;
+height: 700px;
+background: url('hero2.jpg');
+background-position: 50% 50%;
+background-size: cover;
+text-align: center;
+overflow:hidden;
+/*  border: 1px solid;*/
 }
 
 .logo {
@@ -977,7 +977,7 @@ margin-right: auto;
 /*    border: 1px solid;*/
 }
 .mike {
-  height:500px;
+height:500px;
 }
 
 
@@ -1077,14 +1077,14 @@ filter: alpha(opacity=50);
 }
   
 #hero_background {
-  position: relative;
-  height: 600px;
-  background: url('hero2.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  text-align: center;
-  overflow:hidden;
-  /*  border: 1px solid;*/
+position: relative;
+height: 600px;
+background: url('hero2.jpg');
+background-position: 50% 50%;
+background-size: cover;
+text-align: center;
+overflow:hidden;
+/*  border: 1px solid;*/
 }
   
 #arrow {
@@ -1252,9 +1252,9 @@ margin-top:20px;
 
 
 #services {
-  width:100%;
+width:100%;
 /*  border:1px solid;*/
-  margin-left:30px;
+margin-left:30px;
 }
   
   
@@ -1280,7 +1280,7 @@ float:none;
 }
 
 #services {
-  margin-left:0;
+margin-left:0;
 }
 
 }
@@ -1289,30 +1289,35 @@ float:none;
 
 @media (max-width: 800px) {
   
-  #row {
-  display:block;
-  position:relative;
-  width:50%;
-  float:left;
-  }
+#row {
+display:block;
+position:relative;
+width:50%;
+float:left;
+}
   
-  #menu {
-  display:none;
-  position:fixed;
-  top:0;
-  width:100%;
-  background-color:#272626;
-  z-index:5000;
-  position:relative;
+#menu {
+display:none;
+position:fixed;
+top:0;
+width:100%;
+background-color:#272626;
+z-index:5000;
+position:relative;
 
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight:bold;
-  font-size:25px;
-  margin-top:20px;
-  line-height:40px;
+text-align:center;
+font-family: 'Raleway', sans-serif;
+font-weight:bold;
+font-size:25px;
+margin-top:20px;
+line-height:40px;
 
-  }
+}
+  
+
+#box2 {
+display:none;
+}
 
 h3 {
 font-size: 17px;
@@ -1479,6 +1484,20 @@ a.kpc {
 font-size:12px;
 }
 
+.mike {
+width:100%;
+display:block;
+position:relative;
+
+background: url("/mike.jpg") no-repeat center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-position:70% 40%;
+opacity: 0.95;
+filter: alpha(opacity=95);
+}
 #wrapper__logo {
 position: relative;
 width: 100%;
