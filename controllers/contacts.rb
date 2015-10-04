@@ -1,11 +1,9 @@
 
 
 
-get "/" do
-  redirect "/home"
-end
 
-get "/home" do
+
+get "/" do
   erb :"home", :layout => :"layout-two"
    
 end
