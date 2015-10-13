@@ -7,15 +7,12 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.drazicconstruction.com/home</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.drazicconstruction.com/</loc>
 </url>
 <url>
   <loc>http://www.drazicconstruction.com/services</loc>
-  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://www.drazicconstruction.com/work</loc>
-  <changefreq>weekly</changefreq>
 </url>
 </urlset>
